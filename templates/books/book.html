@@ -1,0 +1,21 @@
+{% extends "main/layout.html" %}
+{% load  static %}
+
+{% block title %}
+    library | {{book.title}}
+{% endblock title %}
+
+{% block body %}
+    <section class='onebook'>
+        <div class="book">
+            <h1>{{book.title}}</h1>
+            <div class="img">
+                <img src="{{ book.banner.url }}" alt="{{book.title}}">
+            </div>
+            <p class='desc'><b>Desc:</b><br> {{book.description}}</p>
+            <p class='author'><b>Writen by:</b> {{book.author}}</p>
+            <p class='price'><b>Published At:</b> {{book.pub_date}}</p>
+            <p class='price'><b>Price:</b> {{ book.price }}</p>
+        </div>
+    </section> 
+{% endblock body %}

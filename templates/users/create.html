@@ -1,0 +1,38 @@
+{% extends "main/layout.html" %} {% block title %} create a user {% endblock title %} 
+
+{% block body %}
+<div class="form_cont">
+  <div class="form">
+    <h2>Book Details</h2>
+    <form action="." method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+      <div>
+        <label for="username">user name</label>
+        <input type="text" name="username" />
+      </div>
+        <div>
+        <label for="email">email</label>
+        <input type="email" name="email" />
+      </div>
+      <div>
+        <label for="firstname">first name</label>
+        <input type="text" name="firstname" />
+      </div>
+      <div>
+        <label for="lastname">last name</label>
+        <input type="text" name="lastname" />
+      </div>
+      
+      <div>
+          <label for="password">password</label>
+          <input type="password" name="password" />
+        </div>
+        <div>
+          <label for="confirm_password">confirm Password</label>
+          <input type="password" name="confirm_password" />
+        </div>
+        <button>save</button>
+    </form>
+  </div>
+</div>
+{% endblock body %}

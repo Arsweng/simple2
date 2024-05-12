@@ -1,0 +1,26 @@
+{% extends "main/layout.html" %}
+{% load  static %}
+
+{% block title %}
+    library | books
+{% endblock title %}
+
+{% block body %}
+    <h1>this is a list of all books</h1>
+    <section>
+        <div class="allbooks">
+        {% for book in books %}
+        <a href="{% url 'books:onebook' book.id%}">
+            <article>
+                <div class="img">
+                    <img src="{{ book.banner.url }}" alt="{{book.title}}">
+                </div>
+                <p class='title'>Title: {{book.title}}</p>
+                <p>Author: {{book.author}}</p>
+                <p>Price: {{ book.price }}</p>
+            </article>
+        </a>
+        {% endfor %}
+        </div>
+    </section>
+{% endblock body %}

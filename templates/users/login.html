@@ -1,0 +1,15 @@
+{% extends "main/layout.html" %} {% block title %} create a user {% endblock title %} 
+
+{% block body %}
+<div class="form_cont">
+  <div class="form">
+    <h2>Book Details</h2>
+    <form action="." method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+      
+        {{form}}
+        <button>save</button>
+    </form>
+  </div>
+</div>
+{% endblock body %}

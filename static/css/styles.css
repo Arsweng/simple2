@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: chillax;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+nav {
+  height: 70px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #454545;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+nav h1 {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+main h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+main section .allbooks {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  background-color: #000000;
+}
+
+main .allbooks article {
+  padding: 10px;
+  margin: 40px 0 0 40px;
+  background-color: white;
+  transition: all 0.3s;
+  max-width: max(content);
+}
+
+main .all article:hover {
+  box-shadow: 3px 3px 6px #454545;
+}
+
+main .allbooks article img {
+  width: 50vh;
+  height: 40vh;
+}
+
+main .allbooks article p {
+  font-size: large;
+  font-weight: 600;
+}
+
+main .allbooks article p.title {
+  font-size: larger;
+  font-weight: 700;
+}
+
+main .allbooks a {
+  text-decoration: none;
+  color: black;
+}
+
+section.onebook {
+  background-color: rgb(0, 0, 0);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+div.book {
+  width: 50%;
+  background-color: #dadada;
+  margin: auto;
+  padding: 10px;
+  font-weight: 500;
+  font-size: larger;
+}
+
+div.book img {
+  height: 50%;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+div.book h1 {
+  line-height: 60px;
+  font-size: 30px;
+}
+
+div.book p {
+  margin-top: 15px;
+}
+
+div.book p.desc {
+  font-size: larger;
+}
+
+div.img {
+  width: 100%;
+}
+
+.form_cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.form_cont .form {
+  background-color: #454545;
+  padding: 10px;
+}
+.form_cont .form input {
+  width: 99%;
+  height: 35px;
+  border: none;
+  outline-color: gray;
+  margin: 3px 10px 3px 3px;
+  border-radius: 5px;
+  padding: 3px;
+}
+.form_cont .form textarea {
+  width: 99%;
+  height: 215px;
+  border: none;
+  outline-color: gray;
+  margin: 3px 10px 3px 3px;
+  border-radius: 5px;
+  resize: vertical;
+}
+.form_cont .form button {
+  height: 30px;
+  width: 70px;
+  font-size: large;
+  font-weight: 500;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 5px;
+}
+.form_cont .form h2 {
+  text-align: center;
+}
+.form_cont .form label {
+  font-size: large;
+  font-weight: 500;
+}/*# sourceMappingURL=styles.css.map */
